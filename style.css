@@ -1,0 +1,423 @@
+/* ================================= 
+Everything
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+.text {
+	margin: 3em;
+}
+
+body {
+	line-height: 2;
+	color: #3a3a3a;
+	background-color: #FFE4E1;
+	font-family:'Open Sans Condensed', sans-serif;
+}
+
+
+h1,
+h2 {
+	display: block;
+	font-size: 60px;
+	font-family: 'Abril Fatface', cursive, monospace, sans-serif;
+	text-align: center;
+	
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+/* ================================= 
+Square
+==================================== */
+
+.main h3,
+.main p {
+ padding: 3em ;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: #555;
+  margin: 3em;
+}
+
+.square-background {
+	background-color: #555;
+	transition: background-color 5s linear;
+	
+}
+
+.square-background:hover {
+	background-color: red;
+	
+}
+
+.background-position {
+	background-image: url(http://davidwalsh.name/demo/bg-clouds.png);
+	background-position: 0 0;
+	transition: background-position 6.0s;
+	
+}
+
+.background-position:hover {
+	background-position: 100% 100%;
+	
+}
+
+.border-width {
+	border: solid red;
+	border-width: 2px;
+	transition-property: background-position;
+	transition-duration: .4s;
+	
+}
+
+.border-width:hover {
+	border-width: 75px;
+	
+}
+
+.fly {
+	transition: width 2s, height 2s, transform 2s;
+	transition-duration: 0.4s;
+}
+
+.fly:hover {
+	transform: rotate(180deg);
+	background: red;
+}
+
+.grow {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+
+.grow:hover {
+	width: 800px;
+	background: red;
+}
+
+.height {
+	transition-property: height;
+	transition-duration: 3s;
+	transition-timing-function: ease;
+	
+}
+
+.height:hover {
+	height: 0px;
+	background: red;
+}
+
+.seq {
+	opacity: 0;
+	transition-property: opacity rotate background width;
+	transition-duration: 4s;
+	transition-delay: 1s 1s 1s 1s;
+}
+
+.seq:hover {
+	opacity: 1;
+	transform: rotate(180deg);
+	background-color: red;
+	width: 600px;
+}
+
+.ease {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: ease
+	
+} 
+
+.ease:hover {
+	width: 800px;
+	background: red;
+}
+
+.lin {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	
+} 
+
+.lin:hover {
+	width: 800px;
+	background: blue;
+}
+
+.ease-in {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: ease-in;
+	
+} 
+
+.ease-in:hover {
+	width: 800px;
+	background: purple;
+}
+
+.ease-out {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: ease-out;
+	
+} 
+
+.ease-out:hover {
+	width: 800px;
+	background: #f168ea;
+}
+
+.ease-in-out {
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	
+} 
+
+.ease-in-out:hover {
+	width: 800px;
+	background: navy;
+}
+
+
+
+
+/* ================================= 
+CSS Animations 
+==================================== */
+
+.wrapper {
+	padding: 2em 15em;
+	display: block;
+	text-align: center;
+	background: #fff;
+}
+
+.wrapper p
+ {
+	padding-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.code {
+	text-align: justify;
+	height: 120px;
+	   width: 100%;
+	   border: 1px solid #ccc;
+	   overflow: auto;
+	   padding: 10px 
+}
+
+
+.nav3 {
+	list-style: none;
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+}
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	width: 50%;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 10px;
+	margin: auto;
+	background: #fff;
+}
+
+.button {
+  color: silver;
+  border: 2px solid;
+  transition-duration: .4s, .8s, .4s;
+  transition-property: background, border-radius, color;
+}
+
+.button:hover {
+  color:#fff;
+  background: black;
+  border-radius: 1em;
+}
+
+.button:active {
+  background: #a33830;
+}
+    
+
+/* ================================= 
+  Link Styles
+==================================== */
+
+
+a { 
+	color: #bdbdbd;
+	text-decoration: none;
+}
+
+a:hover { 
+    color: black;
+}
+
+
+
+/* ================================= 
+Main Index 
+==================================== */
+
+.nav {
+	  padding-left:1em;
+	  padding-right: 1em;
+	  padding-top: 1em;
+	  color: #A9A9A9;
+	  font-size: 80px;
+	  font-family: 'Abril Fatface', cursive, monospace, sans-serif;
+	  text-align: center;
+	  line-height: 3em;
+}
+
+/* ================================= 
+Nav Animations
+==================================== */
+
+
+
+.nav li > a {
+  position: relative;
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.nav li > a:hover {
+  color: #000000	;
+}
+
+.nav li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: #000000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+}
+
+/* ================================= 
+What is
+==================================== */
+
+.nav2 {
+ 	margin: 0;
+}
+
+.nav2 li {
+	display: inline-block;
+	padding: 1.5em 0.5em 1.5em 0.5em;
+	color: #ffffff;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.m {
+	float: left;
+	margin: 1em;
+}
+
+
+#bunny {
+	position: relative;
+	background-size: cover;
+	background-image: url(bunny.gif);
+	min-height: 530px;
+	padding: 20px 0;
+}
+
+.primary-content {
+	padding: 2em 15em;
+	display: block;
+	background: #fff;
+	text-align: justify;
+}
+
+.title {
+	text-align: center;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
