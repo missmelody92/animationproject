@@ -1,0 +1,56 @@
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
+</head>
+<body>
+<a href="index.html"><img class="m" src="m.png" style="width: 32px; height: 32px;" alt="logo">
+<div class="nav2">
+	<ul>
+		<li><a href="whatis.html">What is Web Animation?</a></li>
+		<li><a href="Css.html">Css Transitions</a></li>
+	</ul>
+</div>
+<div class="wrapper">
+	<header><H1>
+	CSS Transitions
+	</H1></header>
+	<div class="intro">
+	<p>A value will already be set a list of CSS properties. It will be then given a transition that is a different set of CSS properties, This is the animation effect. Essentially this is the start value that goes to the end value.</p>
+	<a href="#" class="button">Hover over me</a>
+	</div>
+	<xmp class="code">
+	.button {
+	 color: #4a89ca;
+	 border: 2px solid;
+	 transition-duration: .4s, .8s, .4s;
+	 transition-property: background, border-radius, color;
+	}
+	
+	.button:hover {
+	  color:#fff;
+	  background: #4a89ca;
+	  border-radius: 1em;
+	}
+	
+
+	</xmp>
+	<p>The top color and border defines the start value of the button. The transition duration is ordered inline with the below transition properties. The properties will change to the hover state when hovered over. Then back to the start properties when no longer hovered over.</p>
+	<p>These are the following transition properties:</p>
+	<div class="nav3"
+	<ul><li>transition-property </li>
+		<li>transition-duration</li>
+		<li>transition-timing-function</li>
+		<li>transition-delay</li>
+	</ul>
+	</div>
+	<a href="box.html" class="button">See examples</a>
+		</div>
+		
+			
+
+</body>
+</html>
